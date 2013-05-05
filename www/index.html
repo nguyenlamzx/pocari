@@ -1,0 +1,75 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>pocari</title>
+	<meta name="description" content="" />
+	
+	<script src="js/swfobject.js"></script>
+	<script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>
+	<script>
+		var flashvars = {
+		};
+		var params = {
+			menu: "false",
+			scale: "noScale",
+			allowFullscreen: "true",
+			allowScriptAccess: "always",
+			bgcolor: "",
+			wmode: "direct" // can cause issues with FP settings & webcam
+		};
+		var attributes = {
+			id:"pocari"
+		};
+		swfobject.embedSWF(
+			"pocari.swf", 
+			"altContent", "100%", "100%", "10.0.0", 
+			"expressInstall.swf", 
+			flashvars, params, attributes);
+	</script>
+	<style>
+		html, body { height:100%; overflow:hidden; }
+		body { margin:0; }
+	</style>
+</head>
+<body>
+	<div id="altContent">
+		<h1>pocari</h1>
+		<p><a href="http://www.adobe.com/go/getflashplayer">Get Adobe Flash player</a></p>
+	</div>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+	<head>
+		<meta charset="utf-8"/>
+		<title>pocari</title>
+		<meta name="description" content="" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+		<script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>	
+		<style>
+			html, body { height:100%; overflow:hidden; }
+			body { margin:0; }
+		</style>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<div id="flashContent">
+			<h1>You need at least Flash Player 10.2 to view this page.</h1>
+			<p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+		</div>  
+		<script type="text/javascript">
+			//Dynamic publishing with swfObject 
+			var params = {
+				menu: "false",
+				scale: "noScale",
+				allowFullscreen: "true",
+				allowScriptAccess: "always",
+				bgcolor: "",
+				wmode: "transparent" // can cause issues with FP settings & webcam
+			};
+			//A 'name' attribute with the same value as the 'id' is REQUIRED for Chrome/Mozilla browsers
+			swfobject.embedSWF("pocari.swf", "flashContent", "100%", "100%", "10.2", null, params, null, {name:"flashContent"});
+		</script>
+	</body>
+</html>

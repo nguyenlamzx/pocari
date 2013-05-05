@@ -1,0 +1,1 @@
+package com.sff.facebook.core {	public class FBSearchType {				public static const ALL_PUBLIC_POSTS 	:String = "post";		public static const USERS 				:String = "user";		public static const PAGES 				:String = "page";		public static const EVENTS 				:String = "event";		public static const GROUPS 				:String = "group";		}	}
