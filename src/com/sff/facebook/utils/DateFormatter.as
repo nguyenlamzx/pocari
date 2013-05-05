@@ -1,1 +1,0 @@
-package com.sff.facebook.utils {	public class DateFormatter {				public static function getDate( pDate : String ) : Date {			if( !pDate ) return null;						var a : Array = pDate.split( "T" );			var d : Array = a[0].split( "-" );			var h : Array = a[1].split("+")[0].split( ":" );						return new Date( d[0], d[1], d[2], h[0], h[1], h[2] );		}		}	}

@@ -1,1 +1,0 @@
-package com.sff.facebook.data {	public class FBDataVideo extends FBDataMedia {				public function FBDataVideo( pData : Object = null ) {			super( pData );		}				public function get embedHtml() : String { 			return objData.embed_html; 		};					public override function toString() : String {			return  '[FBDataVideo id="'+id+'" name="'+name+'"]';		}		}	}
